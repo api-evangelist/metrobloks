@@ -1,0 +1,55 @@
+generated: '2026-08-17'
+method: probed
+source: live GET of the /.well-known/ discovery surface on the only host Metrobloks operates
+host: https://www.metrobloks.com
+note: >-
+  Every probed path returned 404. metrobloks.com is a Webflow-hosted marketing site for a physical
+  data-center developer; it answers any /.well-known/* request with a static "Invalid .well-known
+  request" HTML page rather than a document. This file records a measured ABSENCE — no WellKnown,
+  SecurityTxt or APICatalog pointer is emitted in apis.yml, because the provider serves none of
+  these surfaces. No api./developer./docs./portal./status. subdomain resolves either.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /.well-known/agent-card.json
+  status: 404
+- path: /.well-known/agent.json
+  status: 404
+spec_paths_probed:
+- path: /openapi.json
+  status: 404
+- path: /openapi.yaml
+  status: 404
+- path: /swagger.json
+  status: 404
+- path: /api-docs
+  status: 404
+- path: /docs
+  status: 404
+- path: /redoc
+  status: 404
+- path: /llms.txt
+  status: 404
+subdomains_probed:
+- host: api.metrobloks.com
+  dns: NXDOMAIN
+- host: developer.metrobloks.com
+  dns: NXDOMAIN
+- host: docs.metrobloks.com
+  dns: NXDOMAIN
+- host: portal.metrobloks.com
+  dns: NXDOMAIN
+- host: my.metrobloks.com
+  dns: NXDOMAIN
+- host: app.metrobloks.com
+  dns: NXDOMAIN
+- host: status.metrobloks.com
+  dns: NXDOMAIN

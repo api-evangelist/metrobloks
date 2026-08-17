@@ -1,0 +1,49 @@
+generated: '2026-08-17'
+method: searched
+source: https://www.metrobloks.com/esg
+note: >-
+  Metrobloks publishes no API, so there is no OpenAPI, securityScheme, error format or pagination
+  convention to derive technical conformance from. What it does publish is a facility-level
+  compliance claim on its ESG page. That claim is recorded here verbatim; nothing about API
+  standards is asserted, because nothing about API standards is published.
+standards:
+- id: soc2
+  conforms: true
+  evidence: >-
+    ESG page, "Data Security & Privacy": "Security and compliance are built into every Metrobloks
+    facility. With SOC 2 and SOC 3 certifications, we safeguard critical data while upholding the
+    highest privacy and regulatory standards."
+  source: https://www.metrobloks.com/esg
+  caveat: >-
+    A marketing-page assertion. No report, auditor, Type I/II designation, audit period or trust
+    center is published, and no request mechanism for the report is given.
+- id: soc3
+  conforms: true
+  evidence: >-
+    Same ESG sentence names SOC 3 alongside SOC 2. A SOC 3 report is by design public, but
+    Metrobloks does not link or host one.
+  source: https://www.metrobloks.com/esg
+  caveat: SOC 3 report not published despite SOC 3 being a public-distribution report type.
+- id: oauth2
+  conforms: false
+  evidence: no API, no authorization server, /.well-known/oauth-authorization-server 404
+- id: oidc
+  conforms: false
+  evidence: /.well-known/openid-configuration 404
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: no API surface
+- id: rfc9116-security-txt
+  conforms: false
+  evidence: /.well-known/security.txt 404
+- id: rfc8615-well-known
+  conforms: false
+  evidence: host answers all /.well-known/* paths with a 404 HTML page
+not_claimed:
+- id: iso-27001
+- id: pci-dss
+- id: hipaa
+- id: fedramp
+- id: uptime-institute-tier
+- id: leed
+- id: eu-code-of-conduct-data-centres

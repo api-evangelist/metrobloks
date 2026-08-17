@@ -1,0 +1,27 @@
+generated: '2026-08-17'
+method: searched
+source: https://www.metrobloks.com/colocation
+plan_count: 0
+note: >-
+  Metrobloks publishes no pricing of any kind — no rate card, no per-kW or per-rack price, no
+  cross-connect fee schedule, no tiers. The solutions pages (colocation, interconnection, AI) end
+  in a contact form; the sitemap carries no /pricing or /plans page. This is normal for wholesale
+  and multi-tenant colocation, where capacity is sold as a negotiated contract per site and per
+  megawatt, but it is recorded here as an honest zero rather than omitted.
+sales_model: contact-sales
+sales_contacts:
+- name: Sales contact form
+  url: https://www.metrobloks.com/sales-contact
+- name: General contact form
+  url: https://www.metrobloks.com/contact
+- name: Channel partner program
+  url: https://www.metrobloks.com/channel-partners
+- name: Referral program
+  url: https://www.metrobloks.com/referral-program
+evidence:
+- url: https://www.metrobloks.com/colocation
+  status: 200
+  finding: capabilities and site specs only, no price
+- url: https://www.metrobloks.com/sitemap.xml
+  status: 200
+  finding: 54 URLs, none is a pricing or plans page
