@@ -17,6 +17,17 @@ description: >-
   It publishes no API, no developer portal, no customer self-service platform and no
   machine-readable specification of any kind; its only published compliance claim is a SOC 2 and
   SOC 3 assertion on its ESG page.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://cdn.prod.website-files.com/6608ba4eccae58b99bf07f74/66a404c6882244d7a030dca6_MB-LogoMark%40256.png
 url: https://raw.githubusercontent.com/api-evangelist/metrobloks/refs/heads/main/apis.yml
 x-type: company
