@@ -1,0 +1,27 @@
+# Front Door AI Index — metrobloks — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: metrobloks
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: www.metrobloks.com
+  final_host: www.metrobloks.com
+  ownership: own
+  owner: metrobloks
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 23
+  host_score: 23
+  density: 23.81
+  words: 966
+  tiers:
+    agentic: 3
+    core: 20
+    model: 0
+  ambiguous: 1
+  top_terms:
+    AI: 20
+    inference: 3
+    agent: 1

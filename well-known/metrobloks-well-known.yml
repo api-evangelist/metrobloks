@@ -2,27 +2,11 @@ generated: '2026-08-17'
 method: probed
 source: live GET of the /.well-known/ discovery surface on the only host Metrobloks operates
 host: https://www.metrobloks.com
-note: >-
-  Every probed path returned 404. metrobloks.com is a Webflow-hosted marketing site for a physical
-  data-center developer; it answers any /.well-known/* request with a static "Invalid .well-known
-  request" HTML page rather than a document. This file records a measured ABSENCE — no WellKnown,
-  SecurityTxt or APICatalog pointer is emitted in apis.yml, because the provider serves none of
-  these surfaces. No api./developer./docs./portal./status. subdomain resolves either.
-documents:
-- path: /.well-known/security.txt
-  status: 404
-- path: /.well-known/openid-configuration
-  status: 404
-- path: /.well-known/oauth-authorization-server
-  status: 404
-- path: /.well-known/api-catalog
-  status: 404
-- path: /.well-known/ai-plugin.json
-  status: 404
-- path: /.well-known/agent-card.json
-  status: 404
-- path: /.well-known/agent.json
-  status: 404
+note: Every probed path returned 404. metrobloks.com is a Webflow-hosted marketing site for a physical
+  data-center developer; it answers any /.well-known/* request with a static "Invalid .well-known request"
+  HTML page rather than a document. This file records a measured ABSENCE — no WellKnown, SecurityTxt or
+  APICatalog pointer is emitted in apis.yml, because the provider serves none of these surfaces. No api./developer./docs./portal./status.
+  subdomain resolves either.
 spec_paths_probed:
 - path: /openapi.json
   status: 404
@@ -53,3 +37,25 @@ subdomains_probed:
   dns: NXDOMAIN
 - host: status.metrobloks.com
   dns: NXDOMAIN
+hosts:
+- host: https://www.metrobloks.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+x-shape-fix:
+  converted: '2026-08-20'
+  from: documents
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent.
