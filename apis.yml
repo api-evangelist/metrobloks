@@ -51,7 +51,7 @@ created: '2026-08-17'
 modified: '2026-08-17'
 tags:
 - Company
-- Data-Center
+- Data Center
 - Colocation
 - Interconnection
 - Edge Computing
@@ -79,6 +79,7 @@ tags_raw:
 - Commercial Real Estate
 - United States
 - France
+- Data-Center
 apis: []
 maintainers:
 - FN: Kin Lane
